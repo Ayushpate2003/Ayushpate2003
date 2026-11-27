@@ -10,14 +10,14 @@
 <td width="370" valign="top">
 
 <!-- ASCII portrait (types itself in on load) -->
-<img src="avi-ascii.svg" width="370" alt="Ayush Patel – ASCII portrait"/>
+<img src="avi-ascii.svg?v=2" width="370" alt="Ayush Patel – ASCII portrait"/>
 
 </td>
 <td width="20"></td>
 <td width="490" valign="top">
 
 <!-- 3-D block-letter wordmark -->
-<img src="wordmark.svg" width="490" alt="AYUSH wordmark"/>
+<img src="wordmark.svg?v=2" width="490" alt="Ayush wordmark"/>
 
 </td>
 </tr>
