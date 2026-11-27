@@ -18,7 +18,7 @@ FONT_FAMILY  = "'Courier New', Courier, monospace"
 FG_COLOR     = "#c9d1d9"     # face colour
 SHADOW_COLOR = "#444c56"     # 3-D depth colour
 DEPTH        = 3             # 3-D extrusion depth (chars)
-ROW_MARGIN   = 60            # px top/bottom padding to hit ~385px rendered height at width=490
+ROW_MARGIN   = 85            # px top/bottom padding to match portrait rendered height (~441px at width=490)
 # ── END CONFIG ──────────────────────────────────────────────────────────
 
 # 5×7 pixel font for A-Z 0-9 + space
