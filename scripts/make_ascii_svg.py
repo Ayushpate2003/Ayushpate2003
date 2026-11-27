@@ -15,21 +15,21 @@ from PIL import Image, ImageEnhance
 INPUT        = "source-prepped.png"
 OUTPUT       = "avi-ascii.svg"
 
-COLS         = 72          # character columns
-FONT_W       = 7.0         # monospace glyph width  (px in SVG)
-FONT_H       = 14.0        # monospace glyph height (px in SVG)
-FONT_SIZE    = 12          # CSS font-size (pt)
+COLS         = 120         # character columns
+FONT_W       = 4.2         # monospace glyph width  (px in SVG)
+FONT_H       = 7.8         # monospace glyph height (px in SVG)
+FONT_SIZE    = 7.0         # CSS font-size (px)
 FONT_FAMILY  = "'Courier New', Courier, monospace"
 
-CONTRAST     = 1.55        # PIL contrast multiplier  (1.0 = off)
-GAMMA        = 1.0         # pixel gamma (applied after PIL contrast; 1.0=off)
-WHITE_FLOOR  = 30          # luminance below this → treat as bg (skip char)
+CONTRAST     = 1.85        # PIL contrast multiplier  (1.0 = off)
+GAMMA        = 0.82        # pixel gamma (<1.0 = more midtone detail in face)
+WHITE_FLOOR  = 15          # luminance below this → treat as bg (skip char)
 FG_COLOR     = "#c9d1d9"   # GitHub dark text colour
 BG_COLOR     = "none"      # transparent
 
 # Animation
 STATIC       = os.environ.get("STATIC", "0") == "1"
-CHAR_DELAY   = 0.012       # seconds between characters typing in
+CHAR_DELAY   = 0.004       # seconds between characters typing in
 # ── END CONFIG ──────────────────────────────────────────────────────────
 
 ASCII_RAMP = " .'`^\",:;Il!i><~+_-?][}{1)(|/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
@@ -44,6 +44,9 @@ def gamma_lut(pixels: np.ndarray, g: float) -> np.ndarray:
 
 def img_to_ascii(path: str):
     img = Image.open(path).convert("RGBA")
+    bbox = img.getbbox()
+    if bbox:
+        img = img.crop(bbox)
     img_rgb = Image.new("RGB", img.size, (0, 0, 0))
     img_rgb.paste(img.convert("RGB"), mask=img.split()[3])
 
@@ -95,7 +98,7 @@ def build_svg(chars):
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W:.0f}" height="{H:.0f}" viewBox="0 0 {W:.0f} {H:.0f}">',
         f'<rect width="100%" height="100%" fill="{BG_COLOR}"/>',
-        f'<g font-family="{FONT_FAMILY}" font-size="{FONT_SIZE}pt" fill="{FG_COLOR}" '
+        f'<g font-family="{FONT_FAMILY}" font-size="{FONT_SIZE}px" fill="{FG_COLOR}" '
         f'xml:space="preserve" letter-spacing="0">',
     ]
 
