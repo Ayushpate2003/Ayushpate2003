@@ -18,7 +18,7 @@
 </table>
 
 <!-- ── PROFESSIONAL INTRODUCTION ───────────────────────────── -->
-<h1>Hi, I'm Ayush Patel 👋</h1>
+<h1>Hi, I'm Ayush Patel</h1>
 
 <p>
   <strong>B.Tech CSE (Cloud Computing &amp; Information Security) · Cloud, DevOps &amp; Generative AI Engineer</strong><br/>
@@ -52,26 +52,26 @@
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
-- 🎓 **Education:** Pursuing **B.Tech in Computer Science Engineering (Cloud Computing & Information Security)** at *Sandip University, Nashik* (`2024–2027`, GPA: `8.57`) following a **Diploma in Computer Science** from *Gov. Polytechnic College, Itarsi* (`2021–2024`, GPA: `7.4`).
-- 💼 **Industry Experience:** Software Developer Intern at **Miraiyantra Pvt. Ltd** (Nashik) and Cloud Developer Intern at **Ediglobe** (Pune, `2025`).
-- 🏆 **Hackathon Winner:** **ML Nashik Hackathon Champion 2026** (*Build with Gemma*) for designing and deploying an **ML Interviewer** powered by Gemma LLM and RAG architecture.
-- 🛡️ **Security Training:** Completed the **Cyber Security Certificate Program** at **IIT Jodhpur** (`Oct 2023 – Jan 2024`), covering network security, ethical hacking, and threat analysis.
-- 🎯 **Career Focus:** Seeking roles in **Cloud Engineering (AWS)**, **DevOps**, **Cybersecurity / DevSecOps**, **Python Development**, and **Generative AI / RAG Systems**.
+- **Education:** Pursuing **B.Tech in Computer Science Engineering (Cloud Computing & Information Security)** at *Sandip University, Nashik* (`2024–2027`, GPA: `8.57`) following a **Diploma in Computer Science** from *Gov. Polytechnic College, Itarsi* (`2021–2024`, GPA: `7.4`).
+- **Industry Experience:** Software Developer Intern at **Miraiyantra Pvt. Ltd** (Nashik) and Cloud Developer Intern at **Ediglobe** (Pune, `2025`).
+- **Hackathon Winner:** **ML Nashik Hackathon Champion 2026** (*Build with Gemma*) for designing and deploying an **ML Interviewer** powered by Gemma LLM and RAG architecture.
+- **Security Training:** Completed the **Cyber Security Certificate Program** at **IIT Jodhpur** (`Oct 2023 – Jan 2024`), covering network security, ethical hacking, and threat analysis.
+- **Career Focus:** Seeking roles in **Cloud Engineering (AWS)**, **DevOps**, **Cybersecurity / DevSecOps**, **Python Development**, and **Generative AI / RAG Systems**.
 
 ---
 
-## 🛠️ Core Tech Stack
+## Core Tech Stack
 
-### 💻 Programming Languages
+### Programming Languages
 <p>
   <img src="https://skillicons.dev/icons?i=python,java,bash&theme=dark" alt="Python, Java, Bash" />
   &nbsp;
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
 </p>
 
-### ☁️ Cloud & Infrastructure
+### Cloud & Infrastructure
 <p>
   <img src="https://skillicons.dev/icons?i=aws,linux&theme=dark" alt="AWS, Linux" />
   &nbsp;
@@ -79,12 +79,12 @@
   <img src="https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" alt="AWS S3" />
 </p>
 
-### ⚙️ DevOps & Automation
+### DevOps & Automation
 <p>
   <img src="https://skillicons.dev/icons?i=docker,git,github,githubactions&theme=dark" alt="Docker, Git, GitHub, GitHub Actions" />
 </p>
 
-### 🤖 AI & Generative AI
+### AI & Generative AI
 <p>
   <img src="https://img.shields.io/badge/OpenAI_GPT-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI GPT" />
   <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Google Gemini" />
@@ -93,7 +93,7 @@
   <img src="https://img.shields.io/badge/Prompt_Engineering-30363D?style=for-the-badge&logo=probot&logoColor=white" alt="Prompt Engineering" />
 </p>
 
-### 🌐 Web Development & Backend
+### Web Development & Backend
 <p>
   <img src="https://skillicons.dev/icons?i=react&theme=dark" alt="React.js" />
   &nbsp;
@@ -101,7 +101,7 @@
   <img src="https://img.shields.io/badge/NoSQL_Fundamentals-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="NoSQL Fundamentals" />
 </p>
 
-### 🔐 Cybersecurity & Networking
+### Cybersecurity & Networking
 <p>
   <img src="https://img.shields.io/badge/Network_Security-C92A2A?style=for-the-badge&logo=wireshark&logoColor=white" alt="Network Security" />
   <img src="https://img.shields.io/badge/Linux_Security-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux Security" />
@@ -109,7 +109,7 @@
   <img src="https://img.shields.io/badge/Ethical_Hacking-000000?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Ethical Hacking" />
 </p>
 
-### 🧰 Tools & Productivity
+### Tools & Productivity
 <p>
   <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
   <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
@@ -119,14 +119,14 @@
   <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Excel" />
 </p>
 
-> **📚 Familiar / Explored in GitHub Projects:** TypeScript · Next.js · PostgreSQL · Terraform (`terraform-ec2-instance`)
+> **Familiar / Explored in GitHub Projects:** TypeScript · Next.js · PostgreSQL · Terraform (`terraform-ec2-instance`)
 
 ---
 
-## 💼 Professional Experience
+## Professional Experience
 
-### 🏢 Software Developer Intern — **Miraiyantra Pvt. Ltd**
-📍 *Nashik, Maharashtra*
+### Software Developer Intern — **Miraiyantra Pvt. Ltd**
+*Nashik, Maharashtra*
 - **Technologies:** React.js, Frontend & Backend Integration, Git, GitHub
 - **Responsibilities & Contributions:**
   - Developed and maintained responsive web applications using modern web technologies.
@@ -134,8 +134,8 @@
   - Supported live application deployment, troubleshooting, and bug fixing to maintain service reliability.
   - Maintained clean version control and collaborative development workflows using Git and GitHub.
 
-### ☁️ Cloud Developer Intern — **Ediglobe**
-📍 *Pune, Maharashtra* | 📅 *2025*
+### Cloud Developer Intern — **Ediglobe**
+*Pune, Maharashtra* | *2025*
 - **Technologies:** AWS, Cloud Deployment, Linux, Shell Scripting, Automation
 - **Responsibilities & Contributions:**
   - Developed and deployed cloud-based solutions designed for scalable application workloads.
@@ -144,12 +144,12 @@
 
 ---
 
-## 🚀 Featured Projects
+## Featured Projects
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>1. 🤖 ML Interviewer (Build with Gemma)</h3>
+      <h3>1. ML Interviewer (Build with Gemma)</h3>
       <p><strong>Problem:</strong> Technical interview prep lacks adaptive, domain-grounded feedback.</p>
       <p><strong>Solution:</strong> Built an AI-powered ML interviewer leveraging <strong>Gemma LLM</strong> and <strong>RAG architecture</strong> for context-aware technical questioning and deployment.</p>
       <p>
@@ -158,12 +158,12 @@
         <img src="https://img.shields.io/badge/RAG-1F6FEB?style=flat-square" alt="RAG"/>
       </p>
       <p>
-        🏆 <strong>ML Nashik Hackathon Champion 2026</strong><br/>
-        🔗 <a href="https://github.com/Ayushpate2003/ml-interviewer">Repository: Ayushpate2003/ml-interviewer</a>
+        <strong>ML Nashik Hackathon Champion 2026</strong><br/>
+        <a href="https://github.com/Ayushpate2003/ml-interviewer">Repository: Ayushpate2003/ml-interviewer</a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>2. ☁️ AWS Cloud & EC2 Infrastructure</h3>
+      <h3>2. AWS Cloud & EC2 Infrastructure</h3>
       <p><strong>Problem:</strong> Manual cloud server and storage provisioning slows down deployments and causes configuration drift.</p>
       <p><strong>Solution:</strong> Implemented scalable hosting and storage workflows using <strong>AWS EC2</strong> and <strong>S3</strong>, alongside repeatable EC2 provisioning.</p>
       <p>
@@ -172,13 +172,13 @@
         <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"/>
       </p>
       <p>
-        🔗 <a href="https://github.com/Ayushpate2003/terraform-ec2-instance">Repository: Ayushpate2003/terraform-ec2-instance</a>
+        <a href="https://github.com/Ayushpate2003/terraform-ec2-instance">Repository: Ayushpate2003/terraform-ec2-instance</a>
       </p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>3. 🐳 Docker-Based Projects & OpenDuty</h3>
+      <h3>3. Docker-Based Projects & OpenDuty</h3>
       <p><strong>Problem:</strong> Environment inconsistencies ("works on my machine") and slow incident runbook execution.</p>
       <p><strong>Solution:</strong> Containerized multi-service applications with <strong>Docker</strong> for reproducible environments, including a self-hosted incident response &amp; runbook automation platform.</p>
       <p>
@@ -187,11 +187,11 @@
         <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
       </p>
       <p>
-        🔗 <a href="https://github.com/Ayushpate2003/OpenDuty">Repository: Ayushpate2003/OpenDuty</a>
+        <a href="https://github.com/Ayushpate2003/OpenDuty">Repository: Ayushpate2003/OpenDuty</a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>4. 🌱 Krishi-Drishti (Sun Hack 2025)</h3>
+      <h3>4. Krishi-Drishti (Sun Hack 2025)</h3>
       <p><strong>Problem:</strong> Rural farmers face unreliable internet connectivity and lack accessible crop-optimization tools.</p>
       <p><strong>Solution:</strong> Built an offline-first agricultural platform to help farmers optimize crop growth with reliable deployment.</p>
       <p>
@@ -200,13 +200,13 @@
         <img src="https://img.shields.io/badge/Cloud_Deploy-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="Cloud"/>
       </p>
       <p>
-        🔗 <a href="https://github.com/Ayushpate2003/sunhack">Repository: Ayushpate2003/sunhack</a>
+        <a href="https://github.com/Ayushpate2003/sunhack">Repository: Ayushpate2003/sunhack</a>
       </p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>5. 📄 AI Document Generator</h3>
+      <h3>5. AI Document Generator</h3>
       <p><strong>Problem:</strong> Drafting structured technical and business documents manually is time-consuming.</p>
       <p><strong>Solution:</strong> Python-based AI document generation tool automating structured document creation using LLM workflows.</p>
       <p>
@@ -214,11 +214,11 @@
         <img src="https://img.shields.io/badge/LLM_Workflow-412991?style=flat-square&logo=openai&logoColor=white" alt="LLM"/>
       </p>
       <p>
-        🔗 <a href="https://github.com/Ayushpate2003/Ai-doc-generater">Repository: Ayushpate2003/Ai-doc-generater</a>
+        <a href="https://github.com/Ayushpate2003/Ai-doc-generater">Repository: Ayushpate2003/Ai-doc-generater</a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>6. 🛡️ SecureOps — AI DevSecOps Platform</h3>
+      <h3>6. SecureOps — AI DevSecOps Platform</h3>
       <p><strong>Problem:</strong> Security findings across CI/CD scanners are fragmented and hard to triage.</p>
       <p><strong>Solution:</strong> Aggregates findings from industry-standard tools (<strong>Trivy</strong>, <strong>Gitleaks</strong>, <strong>Semgrep</strong>) into a unified security posture and remediation workflow.</p>
       <p>
@@ -226,37 +226,37 @@
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
       </p>
       <p>
-        🔗 <a href="https://github.com/Ayushpate2003/SecureOps---AI-DevSecOps-Platform">Repository: Ayushpate2003/SecureOps</a>
+        <a href="https://github.com/Ayushpate2003/SecureOps---AI-DevSecOps-Platform">Repository: Ayushpate2003/SecureOps</a>
       </p>
     </td>
   </tr>
 </table>
 
-- **📝 Skill Hub Quiz Website** *(2023)* — Built an interactive quiz platform and managed application testing, deployment, and troubleshooting.
+- **Skill Hub Quiz Website** *(2023)* — Built an interactive quiz platform and managed application testing, deployment, and troubleshooting.
 
 ---
 
-## 🏆 Achievements
+## Achievements
 
-- 🏆 **ML Nashik Hackathon Champion 2026** — *Build with Gemma*: Designed and implemented an **ML Interviewer** using Gemma LLM and RAG architecture under competitive hackathon constraints.
-- 🌾 **Sun Hack Hackathon (2025)** — Built and deployed **Krishi-Drishti**, an offline-first platform for rural farmers.
-- 💡 **Skill Hub Quiz Website (2023)** — End-to-end software development, testing, and deployment.
+- **ML Nashik Hackathon Champion 2026** — *Build with Gemma*: Designed and implemented an **ML Interviewer** using Gemma LLM and RAG architecture under competitive hackathon constraints.
+- **Sun Hack Hackathon (2025)** — Built and deployed **Krishi-Drishti**, an offline-first platform for rural farmers.
+- **Skill Hub Quiz Website (2023)** — End-to-end software development, testing, and deployment.
 
-## 📜 Certifications
+## Certifications
 
-- 🛡️ **Cyber Security Certificate Program** — **IIT Jodhpur** (`Oct 2023 – Jan 2024`)
+- **Cyber Security Certificate Program** — **IIT Jodhpur** (`Oct 2023 – Jan 2024`)
   - Intensive training in network security, ethical hacking, secure system practices, and real-world threat analysis.
 
-## 🎓 Education
+## Education
 
-- 🎓 **B.Tech in Computer Science Engineering** *(Specialization: Cloud Computing & Information Security)*
+- **B.Tech in Computer Science Engineering** *(Specialization: Cloud Computing & Information Security)*
   - *Sandip University, Nashik* · `Oct 2024 – Apr 2027` · **GPA: `8.57`**
-- 🎓 **Diploma in Computer Science**
+- **Diploma in Computer Science**
   - *Gov. Polytechnic College, Itarsi, Madhya Pradesh* · `Sept 2021 – Apr 2024` · **GPA: `7.4`**
 
 ---
 
-## 📊 GitHub Statistics
+## GitHub Statistics
 
 <div align="center">
 
@@ -278,7 +278,7 @@
 
 ---
 
-## 🤝 Connect With Me
+## Connect With Me
 
 <div align="center">
 
@@ -300,6 +300,6 @@
   </a>
 </p>
 
-<sub>🔄 Contribution heatmap refreshes automatically every day via GitHub Actions.</sub>
+<sub>Contribution heatmap refreshes automatically every day via GitHub Actions.</sub>
 
 </div>
