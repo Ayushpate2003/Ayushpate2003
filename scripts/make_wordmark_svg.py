@@ -114,50 +114,54 @@ def build_svg(rows, mode: str, out_path: pathlib.Path):
     n_cols = max(len(r) for r in rows)
     n_rows = len(rows)
 
-    W = n_cols * FONT_W + DEPTH * FONT_W + 10
-    H = n_rows * FONT_H + 2 * ROW_MARGIN + DEPTH * FONT_H + 10
+    W = n_cols * FONT_W + DEPTH * FONT_W * 0.5 + 16
+    H = n_rows * FONT_H + 2 * ROW_MARGIN + DEPTH * FONT_H * 0.5 + 10
+    gap = 1.2
 
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W:.0f}" height="{H:.0f}" '
         f'viewBox="0 0 {W:.0f} {H:.0f}">',
         '<rect width="100%" height="100%" fill="none"/>',
-        f'<g font-family="{FONT_FAMILY}" font-size="{FONT_SIZE}px" xml:space="preserve">',
     ]
 
     # Draw depth layers first (back to front)
     for d in range(DEPTH, 0, -1):
-        alpha = 0.4 + 0.2 * (DEPTH - d) / max(DEPTH - 1, 1)
+        alpha = 0.35 + 0.15 * (DEPTH - d) / max(DEPTH - 1, 1)
+        x_off = 8 + d * FONT_W * 0.45
+        y_off = ROW_MARGIN + d * FONT_H * 0.45
+        lines.append(f'  <g fill="{SHADOW_COLOR}" opacity="{alpha:.2f}">')
         for r, row in enumerate(rows):
-            y = ROW_MARGIN + (r + d * 0.5) * FONT_H + FONT_H * 0.85
-            x_off = d * FONT_W * 0.5
-            safe = row.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-            lines.append(
-                f'  <text x="{x_off:.1f}" y="{y:.1f}" '
-                f'fill="{SHADOW_COLOR}" opacity="{alpha:.2f}">{safe}</text>'
-            )
+            for c, ch in enumerate(row):
+                if ch != " ":
+                    x = x_off + c * FONT_W
+                    y = y_off + r * FONT_H
+                    lines.append(
+                        f'    <rect x="{x:.1f}" y="{y:.1f}" '
+                        f'width="{FONT_W - gap:.1f}" height="{FONT_H - gap:.1f}" rx="1.5"/>'
+                    )
+        lines.append('  </g>')
 
-    # Draw face layer
-    if mode == "rock":
-        # Rock: pulse animation on each row
-        for r, row in enumerate(rows):
-            y  = ROW_MARGIN + r * FONT_H + FONT_H * 0.85
-            delay = r * 0.08
-            safe = row.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    # Draw face layer (row by row so rock animation works cleanly)
+    for r, row in enumerate(rows):
+        y = ROW_MARGIN + r * FONT_H
+        delay = r * 0.08
+        lines.append(f'  <g fill="{FG_COLOR}">')
+        if mode == "rock":
             lines.append(
-                f'  <text x="0" y="{y:.1f}" fill="{FG_COLOR}">'
-                f'{safe}'
-                f'<animateTransform attributeName="transform" type="translate" '
+                f'    <animateTransform attributeName="transform" type="translate" '
                 f'values="0,0; 0,-2; 0,2; 0,0" dur="2.4s" begin="{delay:.2f}s" '
                 f'repeatCount="indefinite"/>'
-                f'</text>'
             )
-    else:
-        for r, row in enumerate(rows):
-            y = ROW_MARGIN + r * FONT_H + FONT_H * 0.85
-            safe = row.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-            lines.append(f'  <text x="0" y="{y:.1f}" fill="{FG_COLOR}">{safe}</text>')
+        for c, ch in enumerate(row):
+            if ch != " ":
+                x = 8 + c * FONT_W
+                lines.append(
+                    f'    <rect x="{x:.1f}" y="{y:.1f}" '
+                    f'width="{FONT_W - gap:.1f}" height="{FONT_H - gap:.1f}" rx="1.5"/>'
+                )
+        lines.append('  </g>')
 
-    lines += ["</g>", "</svg>"]
+    lines += ["</svg>"]
     svg = "\n".join(lines)
     out_path.write_text(svg, encoding="utf-8")
     print(f"[wordmark] Saved → {out_path}  (canvas {W:.0f}×{H:.0f}px)")
