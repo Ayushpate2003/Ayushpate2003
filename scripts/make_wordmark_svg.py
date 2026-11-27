@@ -8,76 +8,100 @@ Usage:
 import argparse, pathlib, math, textwrap
 
 # ── CONFIG ──────────────────────────────────────────────────────────────
-TEXT         = "AYUSH"       # ← wordmark text
+TEXT         = "Ayush"       # ← wordmark text
 
-FONT_SIZE    = 20            # monospace font size (pt)
-FONT_W       = 12.0          # glyph width  (px)
-FONT_H       = 22.0          # glyph height (px)
+FONT_SIZE    = 18            # monospace font size (px)
+FONT_W       = 11.0          # glyph width  (px)
+FONT_H       = 20.0          # glyph height (px)
 FONT_FAMILY  = "'Courier New', Courier, monospace"
 
-FG_COLOR     = "#c9d1d9"     # face colour
-SHADOW_COLOR = "#444c56"     # 3-D depth colour
-DEPTH        = 3             # 3-D extrusion depth (chars)
-ROW_MARGIN   = 85            # px top/bottom padding to match portrait rendered height (~441px at width=490)
+FG_COLOR     = "#e6edf3"     # face colour
+SHADOW_COLOR = "#3b434b"     # 3-D depth colour
+DEPTH        = 4             # 3-D extrusion depth (layers)
+ROW_MARGIN   = 75            # px top/bottom padding to match portrait rendered height (~441px at width=490)
 # ── END CONFIG ──────────────────────────────────────────────────────────
 
-# 5×7 pixel font for A-Z 0-9 + space
+# 6×9 pixel font for crisp, bold "Ayush"
 GLYPHS = {
-    'A': [" ### ",
-          "#   #",
-          "#   #",
-          "#####",
-          "#   #",
-          "#   #",
-          "#   #"],
-    'Y': ["#   #",
-          "#   #",
-          " # # ",
-          "  #  ",
-          "  #  ",
-          "  #  ",
-          "  #  "],
-    'U': ["#   #",
-          "#   #",
-          "#   #",
-          "#   #",
-          "#   #",
-          "#   #",
-          " ### "],
-    'S': [" ####",
-          "#    ",
-          "#    ",
-          " ### ",
-          "    #",
-          "    #",
-          "#### "],
-    'H': ["#   #",
-          "#   #",
-          "#   #",
-          "#####",
-          "#   #",
-          "#   #",
-          "#   #"],
-    ' ': ["     "] * 7,
-    # Fallback for unknown characters
-    '?': [" ### ",
-          "#   #",
-          "   # ",
-          "  #  ",
-          "  #  ",
-          "     ",
-          "  #  "],
+    'A': [
+        "  ██  ",
+        " ████ ",
+        "██  ██",
+        "██  ██",
+        "██████",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+    ],
+    'y': [
+        "      ",
+        "      ",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+        " █████",
+        "    ██",
+        "██  ██",
+        " ████ ",
+    ],
+    'u': [
+        "      ",
+        "      ",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+        " ████ ",
+    ],
+    's': [
+        "      ",
+        "      ",
+        " █████",
+        "██    ",
+        " ████ ",
+        "    ██",
+        "    ██",
+        "█████ ",
+        "      ",
+    ],
+    'h': [
+        "██    ",
+        "██    ",
+        "█████ ",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+        "██  ██",
+    ],
+    ' ': ["      "] * 9,
+    '?': [
+        " ████ ",
+        "██  ██",
+        "   ██ ",
+        "  ██  ",
+        "  ██  ",
+        "      ",
+        "  ██  ",
+        "      ",
+        "      ",
+    ],
 }
 
 def render_text(text: str):
     """Return list-of-rows where each row is a string."""
     glyph_rows = []
-    for ch in text.upper():
-        g = GLYPHS.get(ch, GLYPHS['?'])
+    for ch in text:
+        g = GLYPHS.get(ch, GLYPHS.get(ch.upper(), GLYPHS['?']))
         glyph_rows.append(g)
 
+    n_lines = len(glyph_rows[0]) if glyph_rows else 0
     rows = []
-    for line_idx in range(7):
+    for line_idx in range(n_lines):
         row = ""
         for gi, g in enumerate(glyph_rows):
             row += g[line_idx]
@@ -97,7 +121,7 @@ def build_svg(rows, mode: str, out_path: pathlib.Path):
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W:.0f}" height="{H:.0f}" '
         f'viewBox="0 0 {W:.0f} {H:.0f}">',
         '<rect width="100%" height="100%" fill="none"/>',
-        f'<g font-family="{FONT_FAMILY}" font-size="{FONT_SIZE}pt" xml:space="preserve">',
+        f'<g font-family="{FONT_FAMILY}" font-size="{FONT_SIZE}px" xml:space="preserve">',
     ]
 
     # Draw depth layers first (back to front)
