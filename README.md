@@ -12,7 +12,7 @@
 </td>
 <td width="20"></td>
 <td width="490" valign="middle" align="center">
-  <img src="wordmark.svg?v=2" width="490" alt="Ayush wordmark"/>
+  <img src="wordmark.svg?v=3" width="490" alt="Ayush – BUILDING • AUTOMATING • SECURING"/>
 </td>
 </tr>
 </table>

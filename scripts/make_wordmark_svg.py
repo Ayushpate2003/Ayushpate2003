@@ -9,6 +9,7 @@ import argparse, pathlib, math, textwrap
 
 # ── CONFIG ──────────────────────────────────────────────────────────────
 TEXT         = "Ayush"       # ← wordmark text
+SUBTITLE     = "BUILDING • AUTOMATING • SECURING"  # ← tagline below wordmark
 
 FONT_SIZE    = 18            # monospace font size (px)
 FONT_W       = 11.0          # glyph width  (px)
@@ -160,6 +161,14 @@ def build_svg(rows, mode: str, out_path: pathlib.Path):
                     f'width="{FONT_W - gap:.1f}" height="{FONT_H - gap:.1f}" rx="1.5"/>'
                 )
         lines.append('  </g>')
+
+    if SUBTITLE:
+        sub_y = ROW_MARGIN + n_rows * FONT_H + DEPTH * FONT_H * 0.45 + 32
+        lines.append(
+            f'  <text x="{W / 2:.1f}" y="{sub_y:.1f}" text-anchor="middle" '
+            f'font-family="{FONT_FAMILY}" font-size="13px" font-weight="600" '
+            f'letter-spacing="2.5" fill="#8b949e">{SUBTITLE}</text>'
+        )
 
     lines += ["</svg>"]
     svg = "\n".join(lines)
